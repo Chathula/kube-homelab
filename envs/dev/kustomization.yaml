@@ -1,0 +1,2 @@
+resources:
+  - ../../apps/nodejs-app/overlays/dev
