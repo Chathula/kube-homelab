@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: nodejs-app
 spec:
+  type: LoadBalancer
   selector:
     app: nodejs-app
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 8000
+    - protocol: TCP
+      port: 8000       # external port
+      targetPort: 8000 # internal app port
