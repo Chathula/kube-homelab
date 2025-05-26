@@ -1,20 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root-application
+  name: app2-staging
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/Chathula/kube-homelab.git
     targetRevision: HEAD
-    path: overlays
-    directory:
-      recurse: true
+    path: apps/staging/app2/manifests
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: argocd
+    namespace: app2-staging
   syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
     automated:
       selfHeal: true
       prune: true
