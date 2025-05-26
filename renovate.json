@@ -3,18 +3,10 @@
   "extends": [
     "config:recommended"
   ],
-  "docker": {
-    "enabled": true
-  },
-  "packageRules": [
-    {
-      "matchDatasources": [
-        "docker"
-      ],
-      "matchPackageNames": [
-        "chathula/hello-world-nest"
-      ],
-      "groupName": "docker image updates"
-    }
-  ]
+  "kubernetes": {
+    "fileMatch": [
+      "\\.yaml$",
+      "\\.yml$"
+    ]
+  }
 }
