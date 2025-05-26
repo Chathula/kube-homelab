@@ -1,6 +1,2 @@
 resources:
   - ../../base
-
-# Optional: customize name or image here
-patchesStrategicMerge:
-  - deployment-patch.yaml
