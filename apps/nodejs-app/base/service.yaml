@@ -8,6 +8,6 @@ spec:
     app: nodejs-app
   ports:
     - protocol: TCP
-      port: 8000       # external port
-      targetPort: 8000 # internal app port
+      port: 5000       # external port
+      targetPort: 5000 # internal app port
       nodePort: 30080  # node port

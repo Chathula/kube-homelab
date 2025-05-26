@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: nodejs
-        image: chathula/docker-node:latest
+        image: chathula/hello-world-nest:latest
         ports:
-        - containerPort: 8000
+        - containerPort: 5000
