@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: nodejs
-          image: chathula/hello-world-nest:latest
+          image: chathula/hello-world-nest:v1.1.5
